@@ -1,6 +1,7 @@
-nav {
+/* Barre de navigation - Menu */
+
+header {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
@@ -19,10 +20,15 @@ nav a:hover {
     border-top: 3px solid blue;
 }
 
-header nav img {
+.logo-booki {
+    display: flex;
+    justify-content: flex-start;
     width: 70px;
     height: auto;
+    padding: 30px;
 }
+
+/* Barre de recherche */
 
 h1 {
     font-family: 'Raleway', sans-serif;
@@ -62,6 +68,6 @@ button {
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
     font-size: 1.1em;
-    font-weight: 400;
+    font-weight: bold;
     font-family: 'Raleway', sans-serif;
 }
