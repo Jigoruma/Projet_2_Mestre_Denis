@@ -107,7 +107,7 @@ form button {
 }
 
 form button:hover {
-    box-shadow: 1px 1px 4px var(--dark-grey);
+    box-shadow: 1px 1px 2px var(--dark-grey);
 }
 
 .fa-magnifying-glass {
@@ -235,7 +235,7 @@ form button:hover {
     background-color: var(--white);
     border-radius: 16px;
     padding: 5px;
-    box-shadow: 0 0 4px var(--dark-grey);
+    box-shadow: 0 0 2px var(--dark-grey);
     flex-grow: 1;
     margin: 0 10px 10px 10px;
     transition: all 0.2s;
@@ -255,7 +255,7 @@ form button:hover {
 
 .card:hover {
     transform: scale(1.02);
-    box-shadow: 0 0 8px var(--dark-grey);
+    box-shadow: 0 0 4px var(--dark-grey);
     cursor: pointer;
 }
 
@@ -294,13 +294,13 @@ form button:hover {
     min-height: 140px;
     margin: 0 20px 20px 20px;
     min-width: 200px;
-    box-shadow: 0 0 4px var(--dark-grey);
+    box-shadow: 0 0 2px var(--dark-grey);
     transition: all 0.2s;
 }
 
 .card-popular:hover {
     transform: scale(1.02);
-    box-shadow: 0 0 8px var(--dark-grey);
+    box-shadow: 0 0 4px var(--dark-grey);
     cursor: pointer;
 }
 
@@ -365,12 +365,12 @@ form button:hover {
     flex-direction: column;
     flex-basis: 22%;
     border-radius: 16px;
-    box-shadow: 0 0 4px var(--dark-grey);
+    box-shadow: 0 0 2px var(--dark-grey);
 }
 
 .card-activites:hover {
     transform: scale(1.02);
-    box-shadow: 0 0 8px var(--dark-grey);
+    box-shadow: 0 0 4px var(--dark-grey);
     cursor: pointer;
 }
 
@@ -460,7 +460,7 @@ footer p {
     nav img {
         display: block;
         margin: auto;
-        padding-left: 40px;
+        justify-content: center;
     }
 
     .bloc-menu {
@@ -495,11 +495,18 @@ footer p {
         display: none;
     }
 
-    .filters {
+    .btn-filter {
         display: flex;
-        flex-direction: column;
-        align-content: flex-start;
-        align-items: baseline;
+        flex-direction: row;
+    }
+
+    .filters div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 50%;
+        gap: 10px;
     }
 
     .filters h3 {
@@ -510,6 +517,9 @@ footer p {
         min-width: 25px;
     }
 
+    #icon-info {
+        margin-top: 10px;
+    }
 
     /* HEBERGEMENTS */
 
@@ -541,6 +551,9 @@ footer p {
         background-color: var(--white);
     }
 
+    .hebergements a {
+        margin-top: 20px;
+    }
 
     /* POPULAIRES */
 
@@ -567,10 +580,28 @@ footer p {
         width: 100px;
     }
 
-    .desc-top {
-        margin-bottom: 100%;
+    /* ACTIVITES */
+
+    .activites {
+        padding-left: 0;
     }
 
+    .activites-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .activites-list img {
+        height: 150px;
+        width: 100%;
+    }
+ 
+    .card-activites {
+        height: 150px;
+        width: 100%;
+    }
 
     /* FOOTER */
 
@@ -578,6 +609,7 @@ footer p {
         display: block;
         padding-left: 30px;
     }
+    
     .footer-left, .footer-middle {
         margin-bottom: 25px;
     }
