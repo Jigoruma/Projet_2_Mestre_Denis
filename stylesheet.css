@@ -505,8 +505,14 @@ footer p {
         justify-content: center;
         align-items: center;
         height: 50px;
-        width: 50%;
         gap: 10px;
+    }
+    
+    .btn-filter.1 {
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        width: 200px;;
     }
 
     .filters h3 {
