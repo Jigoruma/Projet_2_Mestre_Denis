@@ -67,7 +67,7 @@ nav img {
 
 .menu {
     text-decoration: none;
-    padding-top: 30px;
+    padding-top: 22px;
     color: black;
     border-top: 3px solid transparent;
 }
@@ -478,6 +478,10 @@ footer p {
     .filters h3 {
         margin-right: 100%;
         margin-bottom: 0;
+    }
+
+    .populaires {
+        order: -1;
     }
 
     #icon-info {
