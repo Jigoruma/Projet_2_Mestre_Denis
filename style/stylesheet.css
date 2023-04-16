@@ -7,6 +7,10 @@ body {
     box-sizing: border-box;
 }
 
+.star-grey {
+    color:lightgrey;
+}
+
 /* COULEURS */
 
 :root {
@@ -26,12 +30,16 @@ body {
 	left:-999px;
 }
 
-main, 
-header, 
+main,  
 footer {
     max-width: 1400px;                      
     margin: 0 auto;                         
     padding : 0 15px;                       
+}
+
+header {
+    max-width: 1400px;                      
+    margin: 0 auto;
 }
 
 /* MENU */
@@ -47,10 +55,14 @@ nav {
 }
 
 nav a img {
-    width: 120px;
+    width: 80px;
     height: auto;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+nav img {
+    margin-left: 40px;
 }
 
 .menu {
@@ -119,12 +131,18 @@ form button:hover {
     display: none;  
 }
 
+.btn-search,
+.filters,
+#icon-info {
+    margin-left: 20px;
+}
+
 .filters {
     display: inline-flex;
     padding-top: 18px;
     flex-flow: row wrap;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
  }
 
  .filters h3 {
@@ -133,7 +151,7 @@ form button:hover {
 
 .btn-filter p {
     margin: 0;
-    padding-right: 20px;
+    padding-right: 17px;
     cursor: pointer;
 }
 
@@ -235,7 +253,7 @@ form button:hover {
 
 .card-hebergement div {
     flex-basis: calc(33% - 40px);
-    min-width: 220px;
+    min-width: 202px;
 }
 
 .card {
@@ -301,7 +319,8 @@ form button:hover {
     min-height: 140px;
     margin: 0 20px 20px 20px;
     min-width: 200px;
-    box-shadow: 0 0 2px var(--dark-grey);
+    box-shadow: 0px 3px 15px lightgrey;
+    border-radius: 20px;
     transition: all 0.2s;
 }
 
@@ -354,7 +373,7 @@ form button:hover {
 .activites-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 28px;
     transition: all 0.2s;
     min-height: 400px;
 }
@@ -375,8 +394,8 @@ form button:hover {
     display: flex;
     flex-direction: column;
     flex-basis: 22%;
-    border-radius: 16px;
-    box-shadow: 0 0 2px var(--dark-grey);
+    box-shadow: 0px 3px 15px lightgrey;
+    border-radius: 20px;;
 }
 
 .card-activites:hover {
@@ -426,17 +445,45 @@ footer p {
     min-height: 100px;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1024px) {
+
     .card-activites {
-        flex-basis: 20%;
-}
+        flex-basis: 22%;
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
+    body {
+        max-width: 1440px;
+        margin: 0 auto;
+}
+
+    .hebergements h3 {
+        margin-bottom: 20px;
+    }
+
+    .hebergements a {
+        margin-top: 20px;
+    }
+
+    .activites-list {
+        gap: 38px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
     .all-articles {
         flex-direction: column-reverse;
     }
     
+    .filters h3 {
+        margin-right: 100%;
+        margin-bottom: 0;
+    }
+
+    #icon-info {
+        margin-top: 20px;
+    }
+
     .all-articles > div {
         background-color: var(--white);
     }   
@@ -451,8 +498,25 @@ footer p {
         flex-basis: 33%;
     }
 
+    .card {
+        box-shadow: 0px 3px 15px lightgrey;
+        border-radius: 20px;
+    }
+
     .card .stars {
         margin-top: auto;
+    }
+
+    .card-activites {
+        flex-basis: 22%;
+    }
+
+    .hebergements h3 {
+        margin-bottom: 20px;
+    }
+
+    .hebergements a {
+        margin-top: 20px;
     }
 }
 
@@ -483,7 +547,6 @@ footer p {
         display: flex;
         flex-basis: 100%;
         text-align: center;
-        padding: 10px;
     }
 
     .bloc-menu a {
@@ -512,10 +575,17 @@ footer p {
 
     form button {
         border-radius: 15px;
+        margin-left: 40px;
     }
 
     .btn-search span {
         display: none;
+    }
+
+    .btn-search,
+    .filters,
+    #icon-info {
+        margin-left: 0;
     }
 
     .btn-search {
@@ -541,7 +611,7 @@ footer p {
     }
 
     .filters p {
-        font-size: 14px;
+        font-size: 12px;
     }
     
     .filters h3 {
@@ -572,7 +642,8 @@ footer p {
         height: 200px;
         width: 100%;
         margin: 0;
-        box-shadow: none;
+        box-shadow: 0px 3px 15px lightgrey;
+        border-radius: 20px;
     }
 
     .card .stars {
@@ -620,8 +691,10 @@ footer p {
 
     .card-popular {
         height: 150px;
-        width: 100%;
+        width: 95%;
         margin: 0 0 20px 0;
+        box-shadow: 0px 3px 15px lightgrey;
+        border-radius: 20px;
     }
 
     .card-popular img {
@@ -651,6 +724,8 @@ footer p {
         height: 150px;
         width: 100%;
         box-shadow: none;
+        box-shadow: 0px 3px 15px lightgrey;
+        border-radius: 20px;
     }
 
     /* FOOTER */
@@ -662,5 +737,70 @@ footer p {
     
     .footer-left, .footer-middle {
         margin-bottom: 25px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 375px) {
+    .fa-solid.fa-magnifying-glass {
+        display: inline;
+        background-color: var(--blue);
+        margin-left: -5px;
+        font-size: 15px;
+        padding: 0;
+    }
+
+    form button {
+        border-radius: 15px;
+        margin-left: -5px;
+    }
+
+    .btn-search span {
+        display: none;
+    }
+
+    .btn-search,
+    .filters,
+    #icon-info {
+        margin-left: 0;
+    }
+
+    .btn-search {
+        margin-left: 10px;
+    }
+
+    .btn-filter {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .btn-search p {
+        margin-top: -7px;
+    }
+
+    .filters div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        gap: 10px;
+        flex-basis: 46%;
+    }
+
+    .filters p {
+        font-size: 11px;
+    }
+    
+    .filters h3 {
+        margin: 10px;
+        margin-right: 50%;
+    }
+
+    .fa-solid.fa-info {
+        min-width: 25px;
+    }
+
+    #icon-info {
+        margin-top: 10px;
+        margin-left: 10px;
     }
 }
