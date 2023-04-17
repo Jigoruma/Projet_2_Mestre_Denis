@@ -253,7 +253,7 @@ form button:hover {
 
 .card-hebergement div {
     flex-basis: calc(33% - 40px);
-    min-width: 202px;
+    min-width: 175px;
 }
 
 .card {
@@ -262,7 +262,7 @@ form button:hover {
     padding: 5px;
     box-shadow: 0 0 2px var(--dark-grey);
     flex-grow: 1;
-    margin: 0 10px 10px 10px;
+    margin: 0 3px 10px 10px;
     transition: all 0.2s;
 }
 
@@ -287,6 +287,7 @@ form button:hover {
 .card .stars {
     margin-top: auto;
     color: var(--blue);
+    margin-left: 3px;
 }
 
 .afficher_plus {
